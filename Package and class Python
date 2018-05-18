@@ -1,0 +1,28 @@
+START
+
+from teman import views as view_teman
+from buku import views as view_buku
+
+view_teman.run_view()
+view_buku.run_view()
+
+
+
+MODELS DARI BUKU
+
+daftar_buku = []
+daftar_buku.append('Artificial Neural Networl')
+daftar_buku.append('Remote Work Mentoring')
+daftar_buku.append('Machine Learning Tutorial')
+daftar_buku.append('Python Easy but Powerful')
+
+Views dari Buku
+import models
+
+
+def  run_view():
+
+       print('Daftar Buku')
+       print('---')
+       for db in daftar_buku:
+            print(db)
